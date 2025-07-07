@@ -1,0 +1,42 @@
+.jumbotron {
+  padding-top: 5rem;
+  background-color: #cecece;
+}
+#Projects {
+  background-color: #cecece;
+}
+
+.wave1 {
+  --size: 50px;
+  --m: 0.5;
+  --p: calc(var(--m) * var(--size));
+  --R: calc(var(--size) * sqrt(var(--m) * var(--m) + 1));
+
+  height: 150px;
+
+  mask: radial-gradient(var(--R) at left 50% var(--d, top) calc(var(--size) + var(--p)), #000 99%, #0000 101%) calc(50% - 2 * var(--size)) 0 / calc(4 * var(--size)) 100%,
+    radial-gradient(var(--R) at left 50% var(--d, top) calc(-1 * var(--p)), #0000 99%, #000 101%) left 50% var(--d, top) var(--size) / calc(4 * var(--size)) 100% repeat-x;
+  background: linear-gradient(90deg, #cecece);
+}
+
+.wave2 {
+  --size: 50px;
+  --m: 0.5;
+  --p: calc(var(--m) * var(--size));
+  --R: calc(var(--size) * sqrt(var(--m) * var(--m) + 1));
+
+  mask: radial-gradient(var(--R) at 50% calc(100% - (var(--size) + var(--p))), #000 99%, #0000 101%) calc(50% - 2 * var(--size)) 0 / calc(4 * var(--size)) 100%,
+    radial-gradient(var(--R) at 50% calc(100% + var(--p)), #0000 99%, #000 101%) 50% calc(100% - var(--size)) / calc(4 * var(--size)) 100% repeat-x;
+  background: linear-gradient(90deg, #cecece);
+  height: 200px;
+}
+#contact {
+  text-align: center;
+  padding: 10px 0;
+}
+.col {
+  margin-bottom: 15px; /* JARAK ANTARA TEKS DAN ICON */
+}
+section {
+  padding-top: 5rem;
+}
